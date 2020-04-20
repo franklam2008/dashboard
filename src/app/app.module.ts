@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// Pages Component
+import { NavComponent } from './layout/nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import { NavComponent } from './layout/nav/nav.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
+import { TicTacToeComponent } from './pages/tic-tac-toe/tic-tac-toe.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ClientListComponent } from './pages/client-list/client-list.component';
 import { ContactComponent } from './pages/contact/contact.component';
-// Material UI
+// HTTP
+import { HttpClientModule } from '@angular/common/http';
+// CSS
+import { MaterialModule } from './material/material.module';
+// Form
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// Data
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -19,15 +27,19 @@ import { ContactComponent } from './pages/contact/contact.component';
     LayoutComponent,
     NavComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    TicTacToeComponent,
+    ClientListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
