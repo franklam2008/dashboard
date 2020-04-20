@@ -3,21 +3,25 @@
     <span>Dashboard</span>
     <ul>
       <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/client-list">Client</a></li>
       <li><a routerLink="/about">About</a></li>
       <li><a routerLink="/contact">Contact us</a></li>
+      <li><a routerLink="/tic-tac-toe">tic-tac-toe</a></li>
     </ul>
     <span class="example-spacer"></span>
     <mat-icon
       class="example-icon"
       aria-hidden="false"
       aria-label="Example heart icon"
-      >favorite</mat-icon
+      routerLink="/"
+      >home</mat-icon
     >
     <mat-icon
       class="example-icon"
       aria-hidden="false"
       aria-label="Example delete icon"
-      >delete</mat-icon
+      routerLink="/tic-tac-toe"
+      >favorite</mat-icon
     >
   </mat-toolbar-row>
 </mat-toolbar>
