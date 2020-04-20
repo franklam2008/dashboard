@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<h3>Form</h3>
+<form [formGroup]="myForm" class="example-form">
+  <p>Value:{{ myForm.value | json }}</p>
+
+  <mat-divider></mat-divider>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="email" type="text" formControlName="email" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      placeholder="message"
+      type="text"
+      formControlName="message"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="career" type="text" formControlName="career" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="test()">Test</button>
+</form>
