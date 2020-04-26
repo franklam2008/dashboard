@@ -12,7 +12,6 @@ export class AboutComponent implements OnInit {
   lineChartData: ChartDataSets[] = [
     { data: this.dataService.getChartData(), label: 'Crude oil prices' },
   ];
-
   lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
 
   lineChartOptions = {
