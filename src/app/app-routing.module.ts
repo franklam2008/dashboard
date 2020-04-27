@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: 'tic-tac-toe', component: TicTacToeComponent },
   { path: 'client-list', component: ClientListComponent },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
