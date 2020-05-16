@@ -11,9 +11,10 @@ export class TicTacToeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // rebase test 1
-  // rebase test 2
-  // rebase test 3
-  // rebase test 4
-
+  // rebasing testing error 1
+ // rebasing testing error 2
+// rebasing testing error 3
+// rebasing testing error 4
+// rebasing testing error 5
+// rebasing testing error 6
 }
